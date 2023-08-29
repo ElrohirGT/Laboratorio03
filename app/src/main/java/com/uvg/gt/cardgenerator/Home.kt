@@ -23,7 +23,7 @@ class Home : Fragment() {
         val view =  inflater.inflate(R.layout.fragment_home, container, false)
         val btnBirthday = view.findViewById<Button>(R.id.home_btnHappyBirthday)
         val btnLove = view.findViewById<Button>(R.id.home_btnLoveCard)
-        val btnChristams = view.findViewById<Button>(R.id.home_btnChristmas)
+        val btnChristmas = view.findViewById<Button>(R.id.home_btnChristmas)
         val btnNewYear = view.findViewById<Button>(R.id.home_btnNewYear)
         val btnHalloween = view.findViewById<Button>(R.id.home_btnHalloween)
 
@@ -33,7 +33,7 @@ class Home : Fragment() {
         btnLove.setOnClickListener {
             navigateToCardSelect(CardCategories.Love)
         }
-        btnChristams.setOnClickListener {
+        btnChristmas.setOnClickListener {
             navigateToCardSelect(CardCategories.Christmas)
         }
         btnNewYear.setOnClickListener {
