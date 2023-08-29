@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_CATEGORIA_NAME = "categoria"
+const val ARG_CATEGORY_NAME = "categoria"
 
 /**
  * A simple [Fragment] subclass.
@@ -20,7 +20,7 @@ class CardSelector : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            categoria = it.getString(ARG_CATEGORIA_NAME)
+            categoria = it.getString(ARG_CATEGORY_NAME)
         }
     }
 
@@ -42,10 +42,10 @@ class CardSelector : Fragment() {
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
-        fun newInstance(categoryName: String) =
+        fun newInstance(categoryName: CardCategories) =
             CardSelector().apply {
                 arguments = Bundle().apply {
-                    putString(ARG_CATEGORIA_NAME, categoryName)
+                    putString(ARG_CATEGORY_NAME, categoryName.toString())
                 }
             }
     }

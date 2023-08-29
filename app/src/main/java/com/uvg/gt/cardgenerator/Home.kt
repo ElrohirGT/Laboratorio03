@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.navigation.fragment.findNavController
 
 /**
  * A simple [Fragment] subclass.
@@ -22,12 +23,35 @@ class Home : Fragment() {
         val view =  inflater.inflate(R.layout.fragment_home, container, false)
         val btnBirthday = view.findViewById<Button>(R.id.home_btnHappyBirthday)
         val btnLove = view.findViewById<Button>(R.id.home_btnLoveCard)
-        val btnFather = view.findViewById<Button>(R.id.home_btnHappyFathersDay)
-        val btnMother = view.findViewById<Button>(R.id.home_btnHappyMothersDay)
-        val btnGraduation = view.findViewById<Button>(R.id.home_btnGraduationCard)
+        val btnChristams = view.findViewById<Button>(R.id.home_btnChristmas)
+        val btnNewYear = view.findViewById<Button>(R.id.home_btnNewYear)
+        val btnHalloween = view.findViewById<Button>(R.id.home_btnHalloween)
+
+        btnBirthday.setOnClickListener {
+            navigateToCardSelect(CardCategories.Birthday)
+        }
+        btnLove.setOnClickListener {
+            navigateToCardSelect(CardCategories.Love)
+        }
+        btnChristams.setOnClickListener {
+            navigateToCardSelect(CardCategories.Christmas)
+        }
+        btnNewYear.setOnClickListener {
+            navigateToCardSelect(CardCategories.NewYear)
+        }
+        btnHalloween.setOnClickListener {
+            navigateToCardSelect(CardCategories.Halloween)
+        }
 
 
         return view;
+    }
+
+    fun navigateToCardSelect(category: CardCategories) {
+        val controller = findNavController();
+        controller.navigate(R.id.action_home2_to_cardSelector, Bundle().apply{
+            putString(ARG_CATEGORY_NAME, category.toString())
+        })
     }
 
     companion object {

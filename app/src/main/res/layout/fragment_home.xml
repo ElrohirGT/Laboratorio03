@@ -26,20 +26,20 @@
         android:text="Love Card" />
 
     <Button
-        android:id="@+id/home_btnHappyFathersDay"
+        android:id="@+id/home_btnChristmas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Happy Fathers Day Card" />
+        android:text="Merry Christmas Card" />
 
     <Button
-        android:id="@+id/home_btnHappyMothersDay"
+        android:id="@+id/home_btnNewYear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Happy Mothers Day Card" />
+        android:text="New Year Card" />
 
     <Button
-        android:id="@+id/home_btnGraduationCard"
+        android:id="@+id/home_btnHalloween"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Graduation Card" />
+        android:text="Halloween Card" />
 </LinearLayout>
