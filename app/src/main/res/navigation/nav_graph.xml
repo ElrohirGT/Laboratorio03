@@ -38,7 +38,7 @@
         tools:layout="@layout/fragment_birthday_card" >
         <action
             android:id="@+id/action_birthdayCard_to_birthday1"
-            app:destination="@id/birthday1" />
+           fragments andriod studio app:destination="@id/birthday1" />
     </fragment>
     <fragment
         android:id="@+id/loveCard"
