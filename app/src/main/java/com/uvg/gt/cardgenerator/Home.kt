@@ -28,19 +28,29 @@ class Home : Fragment() {
         val btnHalloween = view.findViewById<Button>(R.id.home_btnHalloween)
 
         btnBirthday.setOnClickListener {
-            navigateToCardSelect(CardCategories.Birthday)
+            //navigateToCardSelect(CardCategories.Birthday)
+            val controller = findNavController();
+            controller.navigate(R.id.action_home2_to_birthdayCard)
         }
         btnLove.setOnClickListener {
-            navigateToCardSelect(CardCategories.Love)
+           // navigateToCardSelect(CardCategories.Love)
+            val controller = findNavController();
+            controller.navigate(R.id.action_home2_to_loveCard)
         }
         btnChristmas.setOnClickListener {
-            navigateToCardSelect(CardCategories.Christmas)
+            //navigateToCardSelect(CardCategories.Christmas)
+            val controller = findNavController();
+            controller.navigate(R.id.action_home2_to_christmasCard)
         }
         btnNewYear.setOnClickListener {
-            navigateToCardSelect(CardCategories.NewYear)
+            //navigateToCardSelect(CardCategories.NewYear)
+            val controller = findNavController();
+            controller.navigate(R.id.action_home2_to_newYearCard)
         }
         btnHalloween.setOnClickListener {
-            navigateToCardSelect(CardCategories.Halloween)
+            //navigateToCardSelect(CardCategories.Halloween)
+            val controller = findNavController();
+            controller.navigate(R.id.action_home2_to_halloweenCard)
         }
 
 

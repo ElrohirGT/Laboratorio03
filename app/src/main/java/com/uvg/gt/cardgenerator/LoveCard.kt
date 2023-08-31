@@ -36,7 +36,11 @@ class LoveCard : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view= inflater.inflate(R.layout.fragment_love_card, container, false)
-
+        val btnVolver = view.findViewById<Button>(R.id.back_button)
+        btnVolver.setOnClickListener{
+            val controller = findNavController();
+            controller.navigate(R.id.action_loveCard_to_home2)
+        }
         return view
     }
 

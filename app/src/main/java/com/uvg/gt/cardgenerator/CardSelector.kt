@@ -60,7 +60,7 @@ class CardSelector : Fragment() {
                 childFragmentManager.beginTransaction()
                     .replace(R.id.card_selector_container, birthdayFragment)
                     .commit()
-                
+
             }
             CardCategories.Love.toString() -> {
                 val loveFragment = LoveCardFragment.newInstance()

@@ -6,7 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.FrameLayout
 import android.widget.ImageButton
+import androidx.fragment.app.FragmentContainer
 import androidx.navigation.fragment.findNavController
 
 // TODO: Rename parameter arguments, choose names that match
@@ -38,11 +40,18 @@ class BirthdayCard : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view= inflater.inflate(R.layout.fragment_birthday_card, container, false)
-        val btnVolver = view.findViewById<ImageButton>(R.id.birthday_image_button)
-        btnVolver.setOnClickListener{
+
+
+        val btnVolver2 = view.findViewById<ImageButton>(R.id.birthday3_image_button)
+        btnVolver2.setOnClickListener{
             val controller = findNavController();
             controller.navigate(R.id.action_birthdayCard_to_birthday1)
             println("hi")
+        }
+        val btnVolver = view.findViewById<Button>(R.id.back_button)
+        btnVolver.setOnClickListener{
+            val controller = findNavController();
+            controller.navigate(R.id.action_birthdayCard_to_home2)
         }
         return view
     }

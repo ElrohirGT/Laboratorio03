@@ -37,7 +37,11 @@ class NewYearCard : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view= inflater.inflate(R.layout.fragment_new_year_card, container, false)
-
+        val btnVolver = view.findViewById<Button>(R.id.back_button)
+        btnVolver.setOnClickListener{
+            val controller = findNavController();
+            controller.navigate(R.id.action_newYearCard_to_home2)
+        }
         return view
     }
 

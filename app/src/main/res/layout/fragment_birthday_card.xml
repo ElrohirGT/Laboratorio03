@@ -21,14 +21,14 @@
             android:paddingEnd="16dp"
             android:paddingBottom="8dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/birthday1_1"
+            android:src="@drawable/birthday1"
             android:visibility="visible" />
 
         <ImageButton
             android:id="@+id/birthday2_image_button"
             android:layout_width="match_parent"
             android:layout_height="350dp"
-            android:src="@drawable/birthday2_1"
+            android:src="@drawable/birthday2"
             android:scaleType="fitCenter"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
@@ -56,9 +56,18 @@
             android:paddingEnd="16dp"
             android:paddingTop="8dp"
             android:paddingBottom="0dp"/>
-
+        <!-- Volver (Back) button -->
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volver"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:onClick="onVolverButtonClick" />
 
 
 
     </LinearLayout>
+
 </ScrollView>
