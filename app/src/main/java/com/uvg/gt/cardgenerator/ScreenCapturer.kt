@@ -43,6 +43,6 @@ class ScreenCapturer  {
         intent.action = Intent.ACTION_VIEW
         val uri = Uri.fromFile(imageFile)
         intent.setDataAndType(uri, "image/*")
-        startActivity(intent)
+        //startActivity(intent)
     }
 }
