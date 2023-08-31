@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <ImageButton
+            android:id="@+id/birthday_image_button"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/birthday1"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/birthday2_image_button"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:src="@drawable/birthday2"
+            android:scaleType="fitCenter"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"/>
+
+        <ImageButton
+            android:id="@+id/birthday3_image_button"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:paddingStart="16dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/birthday3" />
+
+        <ImageButton
+            android:id="@+id/birthday4_image_button"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:src="@drawable/birthday4"
+            android:scaleType="fitCenter"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="0dp"/>
+        <!-- Volver (Back) button -->
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volver"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:onClick="onVolverButtonClick" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>
